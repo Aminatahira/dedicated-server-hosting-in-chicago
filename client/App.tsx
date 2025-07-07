@@ -19,6 +19,13 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/about" element={<AboutRedirect />} />
+          <Route path="/contact" element={<ContactRedirect />} />
+          <Route path="/terms" element={<TermsRedirect />} />
+          <Route path="/privacy" element={<PrivacyRedirect />} />
+          <Route path="/disclaimer" element={<DisclaimerRedirect />} />
+          <Route path="/dedicated-servers" element={<DedicatedRedirect />} />
+          <Route path="/lifetime-hosting" element={<LifetimeRedirect />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
